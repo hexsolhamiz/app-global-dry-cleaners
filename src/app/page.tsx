@@ -20,11 +20,11 @@ function FormContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen w-full max-w-7xl mx-auto  bg-background">
       {/* Header */}
       <header className="border-b px-4 lg:px-6 border-border bg-card py-4">
         <div className="container mx-auto px-4">
-          <Image src="/logo.webp" alt="Logo" width={88} height={48} className="h-12 w-22" />
+          <Image src="/logo.webp" alt="Logo" width={88} height={48} className="object-contain h-12 w-22" />
         </div>
       </header>
 
