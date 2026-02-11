@@ -69,8 +69,8 @@ export async function POST(req: NextRequest) {
 
     // Send email to customer
     const { data: customerData, error: customerError } = await resend.emails.send({
-      from: 'jonathan@dedesignsolutions.com',
-      to: 'jonathan@dedesignsolutions.com',
+      from: 'info@globaldrycleaners.co.uk',
+      to: 'info@globaldrycleaners.co.uk',
       subject: `Booking Confirmation - ${bookingReference}`,
       react: BookingConfirmationEmail({
           searchMode,

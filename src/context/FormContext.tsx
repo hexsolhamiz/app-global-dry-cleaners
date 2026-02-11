@@ -123,10 +123,13 @@ export function FormProvider({ children }: { children: ReactNode }) {
   };
 
   const removeService = (id: string) => {
-    setFormData((prev) => ({
-      ...prev,
-      selectedServices: prev.selectedServices.filter((s) => s.id !== id),
-    }));
+    setFormData((prev) => {
+      const idx = prev.selectedServices.findIndex((s) => s.id === id);
+      if (idx === -1) return prev;
+      const updated = [...prev.selectedServices];
+      updated.splice(idx, 1);
+      return { ...prev, selectedServices: updated };
+    });
   };
 
   return (
