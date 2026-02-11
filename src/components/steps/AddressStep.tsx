@@ -118,7 +118,7 @@ export function AddressStep() {
     <div className="space-y-6">
       <div>
         <h2 className="text-2xl font-bold text-foreground">Collection and Delivery</h2>
-        <p className="mt-1 text-muted-foreground">Find your address to get started</p>
+        <p className="mt-1 text-muted-foreground">Find your address to get started (We are only avaialable within 10 miles of Stanmore)</p>
       </div>
 
       {/* Search Field */}
